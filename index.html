@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Travel<span>Go</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Packages</a></li>
+        <li><a href="#travel-blogs">Blog</a></li>
+        <li><a href="#customer-support">Contact</a></li>
+        <li><a href="#booking-payment" class="btn-nav">Book Now</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Explore the World with <span>TravelGo</span></h1>
+        <p>Discover breathtaking destinations and unforgettable experiences.</p>
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Where do you want to go?"
+            id="searchInput"
+          />
+          <button onclick="searchDestination()">Search</button>
+        </div>
+        <a href="#booking-payment" class="btn-home">Book Your Trip</a>
+      </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About <span>Us</span></h2>
+          <p>
+            We are a passionate travel company dedicated to creating
+            unforgettable experiences. Our mission is to make travel accessible,
+            enjoyable, and stress-free for every traveler.
+          </p>
+          <p>
+            From breathtaking destinations to well-curated travel packages, we
+            ensure you have the adventure of a lifetime.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="images/about-image.jpg" alt="About Us" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Mission & Vision -->
+    <section class="mission-vision">
+      <div class="mission">
+        <h3>Our Mission</h3>
+        <p>
+          To inspire and empower travelers to explore the world with confidence,
+          comfort, and unforgettable experiences.
+        </p>
+      </div>
+      <div class="vision">
+        <h3>Our Vision</h3>
+        <p>
+          To become the leading travel brand that connects people with the
+          beauty of the world, making travel seamless and joyful.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <h2>Travel Memories</h2>
+      <p>Explore breathtaking destinations captured by our travelers.</p>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="images/image1.jpg" alt="Travel Image 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/image2.jpg" alt="Travel Image 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/image3.jpg" alt="Travel Image 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/image4.jpg" alt="Travel Image 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/image5.jpg" alt="Travel Image 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/image6.jpg" alt="Travel Image 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/image7.jpg" alt="Travel Image 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/image8.jpg" alt="Travel Image 8" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+      <h2>Top Travel Destinations</h2>
+      <p>Explore the most beautiful places around the world.</p>
+
+      <div class="destination-container">
+        <div class="destination-card">
+          <img src="images/paris.jpg" alt="Paris" />
+          <div class="card-content">
+            <h3>Paris, France</h3>
+            <p>
+              Experience the romance of the City of Lights with its charming
+              streets and the Eiffel Tower.
+            </p>
+            <a href="#" class="btn">View More</a>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="images/bali.jpg" alt="Bali" />
+          <div class="card-content">
+            <h3>Bali, Indonesia</h3>
+            <p>
+              Relax on stunning beaches and enjoy Bali’s exotic culture and
+              scenic landscapes.
+            </p>
+            <a href="#" class="btn">View More</a>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="images/japan.jpg" alt="Tokyo" />
+          <div class="card-content">
+            <h3>Tokyo, Japan</h3>
+            <p>
+              Discover the perfect blend of modern technology and ancient
+              traditions in Tokyo.
+            </p>
+            <a href="#" class="btn">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours & Packages Section -->
+    <section class="tours" id="tours">
+      <h2>Exclusive Tour Packages</h2>
+      <p>
+        Choose from our best-selling travel packages designed for your dream
+        vacation.
+      </p>
+
+      <div class="tour-container">
+        <div class="tour-card">
+          <img src="images/maldives.jpg" alt="Maldives Tour" />
+          <div class="tour-content">
+            <h3>Maldives Getaway</h3>
+            <p>5 Days & 4 Nights | Luxury Beach Resort</p>
+            <span class="price">$1,299</span>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="images/swiss.jpg" alt="Switzerland Tour" />
+          <div class="tour-content">
+            <h3>Swiss Alps Adventure</h3>
+            <p>7 Days & 6 Nights | Scenic Train Journey</p>
+            <span class="price">$2,499</span>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="images/egypt.jpg" alt="Egypt Tour" />
+          <div class="tour-content">
+            <h3>Egyptian Wonders</h3>
+            <p>6 Days & 5 Nights | Historic Sightseeing</p>
+            <span class="price">$1,799</span>
+            <a href="#" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Guides & Blogs Section -->
+    <section class="travel-blogs" id="travel-blogs">
+      <h2>Travel Guides & Blogs</h2>
+      <p>
+        Discover exciting destinations and expert travel tips from our guides.
+      </p>
+
+      <div class="blog-container">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+          <img src="images/paris1.jpg" alt="Paris Blog" />
+          <div class="blog-content">
+            <h3>Exploring Paris: A Complete Travel Guide</h3>
+            <p>
+              From iconic landmarks to hidden gems, explore the best places to
+              visit in Paris.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card">
+          <img src="images/bali1.jpg" alt="Bali Blog" />
+          <div class="blog-content">
+            <h3>Bali: The Ultimate Island Escape</h3>
+            <p>
+              Find out the best beaches, temples, and activities in this
+              tropical paradise.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-card">
+          <img src="images/newyork.jpg" alt="NYC Blog" />
+          <div class="blog-content">
+            <h3>New York City: Must-See Attractions</h3>
+            <p>Discover the top attractions, restaurants, and things to do .</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flights & Hotels Section -->
+    <section class="flights-hotels">
+      <h2>Find the Best Flights & Hotels</h2>
+      <p>Compare prices and book your perfect travel experience.</p>
+
+      <div class="booking-container">
+        <!-- Flights -->
+        <div class="booking-category">
+          <h3>Top Flight Deals</h3>
+          <div class="booking-card">
+            <img src="images/flight.jpg" alt="Flight" />
+            <div class="card-content">
+              <h4>New York to Paris</h4>
+              <p>Non-stop | 7h 30m</p>
+              <span class="price">$499</span>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="booking-card">
+            <img src="images/flight.jpg" alt="Flight" />
+            <div class="card-content">
+              <h4>Tokyo to London</h4>
+              <p>1 stop | 14h 20m</p>
+              <span class="price">$899</span>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotels -->
+        <div class="booking-category">
+          <h3>Luxury Hotels</h3>
+          <div class="booking-card">
+            <img src="images/dubai.jpg" alt="Hotel" />
+            <div class="card-content">
+              <h4>Grand Hyatt, Dubai</h4>
+              <p>5-star | Beachfront | Free Wi-Fi</p>
+              <span class="price">$199 / night</span>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+
+          <div class="booking-card">
+            <img src="images/maldives1.jpg" alt="Hotel" />
+            <div class="card-content">
+              <h4>Maldives Water Villa</h4>
+              <p>5-star | Overwater Bungalow | All-Inclusive</p>
+              <span class="price">$599 / night</span>
+              <a href="#" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <h2>What Our Customers Say</h2>
+      <p>Read reviews from travelers who explored with us.</p>
+      <div class="reviews-container">
+        <div class="review-card">
+          <p>
+            "The trip was amazing! Everything was well-organized, and the guides
+            were fantastic!"
+          </p>
+          <div class="reviewer">
+            <img src="images/client1.jpg" alt="User 1" />
+            <div>
+              <h4>John Doe</h4>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>
+            "An unforgettable experience! The best vacation of my life, highly
+            recommend."
+          </p>
+          <div class="reviewer">
+            <img src="images/client2.jpg" alt="User 2" />
+            <div>
+              <h4>Sarah Johnson</h4>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <p>
+            "Fantastic service and beautiful locations. Will book again! The
+            trip was amazing!"
+          </p>
+          <div class="reviewer">
+            <img src="images/client3.jpg" alt="User 3" />
+            <div>
+              <h4>Emily Smith</h4>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking & Payment Section -->
+    <section class="booking-payment" id="booking-payment">
+      <h2>Book Your Trip & Secure Your Payment</h2>
+      <p>Fill in your details and proceed with secure online payment.</p>
+
+      <div class="booking-container">
+        <form class="booking-form">
+          <!-- Destination Selection -->
+          <label for="destination">Choose Your Destination:</label>
+          <select id="destination" required>
+            <option value="" disabled selected>Select Destination</option>
+            <option value="paris">Paris, France</option>
+            <option value="bali">Bali, Indonesia</option>
+            <option value="dubai">Dubai, UAE</option>
+            <option value="newyork">New York, USA</option>
+          </select>
+
+          <!-- Travel Date -->
+          <label for="date">Travel Date:</label>
+          <input type="date" id="date" required />
+
+          <!-- Number of Travelers -->
+          <label for="travelers">Number of Travelers:</label>
+          <input
+            type="number"
+            id="travelers"
+            min="1"
+            max="10"
+            placeholder="Enter number"
+            required
+          />
+
+          <!-- Payment Method -->
+          <label for="payment">Select Payment Method:</label>
+          <select id="payment" required>
+            <option value="" disabled selected>Select Payment Method</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Bank Transfer</option>
+          </select>
+
+          <!-- Contact Information -->
+          <label for="email">Your Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+
+          <!-- Proceed Button -->
+          <button type="submit" class="btn-booking">Proceed to Payment</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Customer Support Section -->
+    <section class="customer-support" id="customer-support">
+      <h2>Need Help? Contact Our Support Team</h2>
+      <p>
+        We are here to assist you 24/7. Reach out through call, email, or live
+        chat.
+      </p>
+
+      <div class="support-container">
+        <!-- Contact Info -->
+        <div class="support-info">
+          <div class="info-box">
+            <i class="fas fa-phone"></i>
+            <h3>Call Us</h3>
+            <p>+91 7464903933</p>
+          </div>
+
+          <div class="info-box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Support</h3>
+            <p>Jatinarora7464@gmail.com</p>
+          </div>
+
+          <div class="info-box">
+            <i class="fas fa-comments"></i>
+            <h3>Live Chat</h3>
+            <p><a href="#">Start Chat Now</a></p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form>
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="message">Your Message:</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-customer">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+      <h2>Follow Us on Social Media</h2>
+      <p>Stay updated with the latest travel trends, tips, and destinations.</p>
+      <div class="social-icons">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+      <h2>Join Our Travel Community</h2>
+      <p>
+        Connect with fellow travelers, share experiences, and get travel
+        insights.
+      </p>
+      <div class="community-container">
+        <div class="community-box">
+          <i class="fas fa-users"></i>
+          <h3>Traveler Groups</h3>
+          <p>Find and join travel groups that match your interests.</p>
+        </div>
+        <div class="community-box">
+          <i class="fas fa-comments"></i>
+          <h3>Forums & Discussions</h3>
+          <p>Share travel tips, ask questions, and get advice from experts.</p>
+        </div>
+        <div class="community-box">
+          <i class="fas fa-share"></i>
+          <h3>Share Your Stories</h3>
+          <p>Post your travel stories and inspire others to explore.</p>
+        </div>
+      </div>
+      <a href="#" class="btn">Join Now</a>
+    </section>
+  </body>
+</html>
